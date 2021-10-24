@@ -14,14 +14,22 @@ monthly_challenges = {
     "july": "En Julio hay que comer frutas todos los dias",
     "august": "En Agosto hay que meditar media hora todos los dias!",
     "september": "En Septiembre hay que poner September 24/7",
-    "November": "En Noviembre hay que celebrar mi cumple todos los dias",
-    "December": "En Diciembre hay que hacer un regalo todos los dias"
+    "october": "En Octubre hay que ver una peli de miedo todos los dias",
+    "november": "En Noviembre hay que celebrar mi cumple todos los dias",
+    "december": "En Diciembre hay que hacer un regalo todos los dias"
 }
 
+
 def monthly_challenge_by_number(request, month):
-    months  = list(monthly_challenges.keys())
+    months = list(monthly_challenges.keys())
+
+    # check si el mes es mayor a la cantida de meses
+    if month > len(months):
+        return HttpResponseNotFound("Invalid Month")
+
     forward_month = months[month - 1]
     return HttpResponseRedirect("/challenges/" + forward_month)
+
 
 def monthly_challenge(request, month):
     try:
