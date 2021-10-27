@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'challenges' #Best way to add templates
+    'challenges', #Best way to add templates
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
