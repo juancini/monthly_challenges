@@ -18,7 +18,7 @@ monthly_challenges = {
     "september": "En Septiembre hay que poner September 24/7",
     "october": "En Octubre hay que ver una peli de miedo todos los dias",
     "november": "En Noviembre hay que celebrar mi cumple todos los dias",
-    "december": "En Diciembre hay que hacer un regalo todos los dias"
+    "december": None
 }
 
 

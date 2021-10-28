@@ -58,6 +58,7 @@ TEMPLATES = [
         'DIRS': [
             #esta es una forma de anadir templates, pero es medio malarda
             #BASE_DIR / "challenges" / "templates"
+            BASE_DIR / "templates"
         ],
         'APP_DIRS': True,
         'OPTIONS': {
